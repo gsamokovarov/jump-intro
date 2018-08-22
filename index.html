@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>jump</title>
+
+    <link href="/css/reveal.css" rel="stylesheet" />
+    <link href="/css/simple.css" rel="stylesheet" />
+    <link href="/css/googlecode.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section class="center" data-background="#000"><h1 class="white">jump</h1></section><section class="center"><img class="inline" src="/images/me.png" /></section><section class="center"><p><a href="http://gsamokovarov.com">@gsamokovarov</a></p></section><section data-background="/images/pixelparty.gif"></section><section data-background="/images/epileptic.gif"></section><section class="center" data-background="#000"><h2 class="white"><3 $SHELL</h2></section><section class="center" data-background="#000"><p class="white">I wanna type less.</p></section><section class="center"><p>cd(1), pushd(1), popd(1)</p></section><section class="center"><img class="inline" src="/images/yolo.png" /></section><section class="center" data-background="#000"><h2 class="white">aliases</h2></section><section class="center" data-background="#000"><pre class="white">alias wc="cd /Users/genadi/Development/web-console"
+alias rls="cd /Users/genadi/Development/rails"
+alias gw="cd /Users/genadi/Development/gateway" </pre></section><section class="center"><img class="inline" src="/images/smiley.jpg" /></section><section class="center"><p>Tedious to change.</p></section><section class="center"><img class="inline" src="/images/sad.png" /></section><section class="center"><h2>autojump(1)</h2></section><section class="center"><p>A faster way to navigate your filesystem.</p></section><section class="center"><p>Works by maintaining a database of the directories you use the most from the command line.</p></section><section class="center"><img class="inline" src="/images/smiley.jpg" /></section><section class="center" data-background="#000"><pre class="white">$ j rails
+$ pwd
+/Users/genadi/Development/rails </pre></section><section class="center"><p>Requires a working Python installation.</p></section><section class="center"><img class="inline" src="/images/troll.png" /></section><section class="center"><p>Tedious to integrate with the shell.</p></section><section class="center"><p>Its not fuzzy.</p></section><section class="center"><img class="inline" src="/images/sad.png" /></section><section class="center" data-background="#000"><h2 class="white">z(1)</h2></section><section class="center"><img class="inline" src="/images/smiley.jpg" /></section><section class="center"><p>Doesn't work on fish shell.</p></section><section class="center"><p>Its not fuzzy.</p></section><section class="center"><img class="inline" src="/images/sad.png" /></section><section class="center" data-background="#F00"><h2 class="white">jump</h2></section><section class="center" data-background="#0F0"><h2 class="white">jump</h2></section><section class="center" data-background="#0FF"><h2 class="white">jump</h2></section><section class="center" data-background="#F0F"><h2 class="white">jump</h2></section><section class="center"><p>Kinda like autojump(1) or z(1).</p></section><section class="center" data-background="/images/bubbles.gif"><h2 class="fragment white">FUZZY!</h2></section><section class="center" data-background="/images/bubbles.gif"><h2 class="white">YOU TYPE LESS!</h2></section><section class="center" data-background="/images/bubbles.gif"><h2 class="white">AWESOME!</h2></section><section class="center" data-background="#000"><h2 class="fragment white">DEMO</h2></section><section class="center" data-background="#000"></section><section class="center" data-background="#000"><pre class="white">$ brew tap gsamokovarov/jump
+$ brew install jump </pre></section><section class="center" data-background="#000"><pre class="white">$ eval "$(jump shell)" </pre></section><section class="center"><p><a href="http://gsamokovarov.com/jump">http://gsamokovarov.com/jump</a></p></section><section class="center"><p><a href="http://github.com/gsamokovarov/jump">http://github.com/gsamokovarov/jump</a></p></section><section data-background="/images/jump.gif"></section>
+      </div>
+    </div>
+
+    <script src="/js/head.min.js"></script>
+    <script src="/js/reveal.js"></script>
+
+    <script type="text/javascript">
+      Reveal.initialize({
+        width:  '100%',
+        height: '100%',
+        margin: 0.05,
+        controls: false,
+        progress: false,
+        history: true,
+        center: false,
+        rollingLinks: true,
+        transition: 'none',
+        backgroundTransition: 'none',
+        dependencies: [
+          {
+            src: '/js/highlight.js',
+            async: true,
+            callback: function() {
+              hljs.configure({ languages: ['ruby'] });
+              hljs.initHighlightingOnLoad();
+            }
+          }
+        ]
+      });
+    </script>
+  </body>
+</html>
